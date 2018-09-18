@@ -79,3 +79,58 @@ public class DetalleVenta {
 
 	public void leerDatos()
 	{
+		System.out.println ("Ingrese los datos de un DetalleVenta:");
+
+		
+
+		this.IdVenta =leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
+		this.IdMueble = leerConsola.LeerEnteros("\tIdMueble: ", 1, 100);
+		this.Cantidad = leerConsola.LeerEnteros("\tCantidad: ", 1, 100);
+     this.PrecioVenta  = leerConsola.LeerEnteros("\tPrecioVenta: ", 1,100);;
+	}
+
+	
+	public void setIdVenta(int IdVenta)
+	{
+		this.IdVenta = IdVenta;
+	}
+ 
+ public void setIdMueble(int IdMueble)
+ {
+     this.IdMueble=IdMueble;
+ }
+ 
+ public void setCantidad(int Cantidad)
+ {
+     this.Cantidad=Cantidad;
+ }
+
+ public void setPrecioVenta (int PrecioVenta )
+ {
+     this.PrecioVenta =PrecioVenta ;
+ }
+
+	public int getIdDetalleVenta()
+	{
+		return this.IdDetalleVenta;
+	}
+	
+	public int getIdVenta()
+	{
+		return this.IdVenta;
+	}
+
+ public int getIdMueble()
+ {
+     return this.IdMueble;
+ }
+
+ public int getCantidad()
+ {
+     return this.Cantidad;
+ }
+
+ public int getPrecioVenta ()
+ {
+     return this.PrecioVenta ;
+ }
