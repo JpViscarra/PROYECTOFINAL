@@ -134,3 +134,18 @@ public class DetalleVenta {
  {
      return this.PrecioVenta ;
  }
+
+	public void insertar(OperacionesSQL miSQL) throws SQLException
+	{
+
+		String query = "INSERT INTO DetalleVenta ";
+		query +=       "SET    IdVenta = '" + this.getIdVenta() + "', ";
+		query +=       "       IdMueble = '" + this.getIdMueble() + "', ";
+		query +=       "       Cantidad = '" + this.getCantidad() + "', ";
+        query +=       "       PrecioVenta  = '" + this.getPrecioVenta ()+ "' ";
+
+		miSQL.InsertarNuevo(query);
+
+	}
+
+}
