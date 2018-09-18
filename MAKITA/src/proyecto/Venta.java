@@ -39,3 +39,23 @@ public class Venta {
 		query +=       "WHERE  IdVenta = " + codigo;
 
 		ResultSet rs = operacionesSQL.selectSQL(query);
+
+		if (rs.next())
+		{
+			this.IdVenta = rs.getInt(1);
+			this.Fecha = rs.getString(2);
+			this.MontoTotal  = rs.getInt(3);
+			this.IdCliente  = rs.getInt(4);
+         this.IdEmpleado =rs.getInt(5);
+			
+		}
+		else
+		{
+			this.IdVenta = 0;
+			this.Fecha="";
+         this.MontoTotal =0;
+         this.IdCliente =0;
+         this.IdEmpleado =0;
+		}
+
+		operacionesSQL.cerrar();
