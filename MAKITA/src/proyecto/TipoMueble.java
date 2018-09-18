@@ -64,3 +64,29 @@ public class TipoMueble {
 			System.out.println ("\tDescripcion: " + this.Descripcion);
 		}
 	}
+
+	public void setNombre(String Nombre)
+	{
+		this.Nombre = Nombre;
+	}
+   
+   public void setDescripcion(String Descripcion)
+   {
+       this.Descripcion=Descripcion;
+   }
+
+	public int getIdTipoMueble()
+	{
+		return this.IdTipoMueble;
+	}
+
+   public String getNombre()
+   {
+       return this.Nombre;
+   }
+   public String getDescripcion()
+   {
+       return this.Descripcion;
+   }
+
+}
