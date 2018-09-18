@@ -35,3 +35,19 @@ public class TipoMueble {
 		query +=       "WHERE  IdTipoMueble = " + codigo;
 
 		ResultSet rs = operacionesSQL.selectSQL(query);
+
+		if (rs.next())
+		{
+			this.IdTipoMueble = rs.getInt(1);
+			this.Nombre = rs.getString(2);
+			this.Descripcion = rs.getString(3);
+			
+		}
+		else
+		{
+			this.IdTipoMueble = 0;
+			this.Nombre="";
+           this.Descripcion="";
+		}
+
+		operacionesSQL.cerrar();
