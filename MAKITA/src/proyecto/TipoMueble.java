@@ -16,3 +16,10 @@ public class TipoMueble {
        Descripcion="";
        leerConsola= new LeerConsola();
 	}
+
+	public TipoMueble(int IdTipoMueble, String Nombre, String Descripcion )
+   {
+       this.IdTipoMueble=IdTipoMueble;
+       this.Nombre=Nombre;
+       this.Descripcion=Descripcion;
+   }
