@@ -23,3 +23,15 @@ public class TipoMueble {
        this.Nombre=Nombre;
        this.Descripcion=Descripcion;
    }
+
+	public TipoMueble(int codigo, OperacionesSQL operacionesSQL) throws SQLException
+	{
+		leerConsola = new LeerConsola();
+
+		//miSQL.abrir();
+
+		String query = "SELECT *  ";
+		query +=       "FROM   tipomuebles ";
+		query +=       "WHERE  IdTipoMueble = " + codigo;
+
+		ResultSet rs = operacionesSQL.selectSQL(query);
