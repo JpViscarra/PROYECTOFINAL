@@ -132,3 +132,19 @@ public class Venta {
  {
      return this.IdEmpleado ;
  }
+
+	public void insertar(OperacionesSQL miSQL) throws SQLException
+	{
+		
+		String query = "INSERT INTO Ventas ";
+		query +=       "SET    Fecha = '" + this.getFecha() + "', ";
+		query +=       "       MontoTotal  = '" + this.getMontoTotal () + "', ";
+		query +=       "       IdCliente  = '" + this.getIdCliente () + "', ";
+     query +=       "       IdEmpleado  = '" + this.getIdEmpleado ()+ "' ";
+
+		miSQL.InsertarNuevo(query);
+	
+
+	}
+
+}
