@@ -59,3 +59,22 @@ public class Venta {
 		}
 
 		operacionesSQL.cerrar();
+
+	}
+
+	public void mostrar()
+	{
+		if (this.IdVenta != 0)
+		{
+			System.out.println ("Ventas:");
+			System.out.println ("\tIdVenta: " + this.IdVenta);
+			System.out.println ("\tFecha: " + this.Fecha);
+			System.out.println ("\tMontoTotal : " + this.MontoTotal );
+			System.out.println ("\tIdCliente : " + this.IdCliente );
+         System.out.println ("\tIdEmpleado : " + this.IdEmpleado );
+		}
+	}
+
+	public void leerDatos()
+	{
+		System.out.println ("Ingrese los datos de un Venta:");
