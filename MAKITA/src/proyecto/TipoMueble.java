@@ -8,3 +8,11 @@ public class TipoMueble {
        private String Nombre;
        private String Descripcion;
        private LeerConsola leerConsola;
+
+	public TipoMueble()
+	{
+		IdTipoMueble=0;
+       Nombre="";
+       Descripcion="";
+       leerConsola= new LeerConsola();
+	}
