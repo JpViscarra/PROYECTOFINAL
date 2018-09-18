@@ -51,3 +51,16 @@ public class TipoMueble {
 		}
 
 		operacionesSQL.cerrar();
+
+	}
+
+	public void mostrar()
+	{
+		if (this.IdTipoMueble != 0)
+		{
+			System.out.println ("TipoMueble:");
+			System.out.println ("\tIdTipoMueble: " + this.IdTipoMueble);
+			System.out.println ("\tNombre: " + this.Nombre);
+			System.out.println ("\tDescripcion: " + this.Descripcion);
+		}
+	}
