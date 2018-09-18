@@ -20,3 +20,22 @@ public class Venta {
      IdEmpleado =0;
      leerConsola= new LeerConsola();
 	}
+
+	public Venta(int IdVenta, String Fecha, int MontoTotal , int IdCliente  , int IdEmpleado  )
+ {
+     this.IdVenta=IdVenta;
+     this.Fecha=Fecha;
+     this.MontoTotal =MontoTotal ;
+     this.IdCliente =IdCliente ;
+     this.IdEmpleado =IdEmpleado ;
+ }
+
+	public Venta(int codigo, OperacionesSQL operacionesSQL) throws SQLException
+	{
+		leerConsola = new LeerConsola();
+
+		String  query = "SELECT *  ";
+		query +=       "FROM   Ventas ";
+		query +=       "WHERE  IdVenta = " + codigo;
+
+		ResultSet rs = operacionesSQL.selectSQL(query);
