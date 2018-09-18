@@ -78,3 +78,11 @@ public class Venta {
 	public void leerDatos()
 	{
 		System.out.println ("Ingrese los datos de un Venta:");
+
+		
+
+		this.Fecha =leerConsola .LeerCadena("\tFecha: ", leerConsola.NoNulo);
+		this.MontoTotal  = leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
+		this.IdCliente  = leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
+     this.IdEmpleado  = leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
+	}
