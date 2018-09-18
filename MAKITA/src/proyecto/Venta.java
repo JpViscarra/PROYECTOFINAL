@@ -86,3 +86,49 @@ public class Venta {
 		this.IdCliente  = leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
      this.IdEmpleado  = leerConsola.LeerEnteros("\tIdVenta: ", 1, 100);
 	}
+
+	
+	public void setFecha(String Fecha)
+	{
+		this.Fecha = Fecha;
+	}
+ 
+ public void setMontoTotal (int MontoTotal )
+ {
+     this.MontoTotal =MontoTotal ;
+ }
+ 
+ public void setIdCliente (int IdCliente )
+ {
+     this.IdCliente =IdCliente ;
+ }
+
+ public void setIdEmpleado (int IdEmpleado )
+ {
+     this.IdEmpleado =IdEmpleado ;
+ }
+
+	public int getIdVenta()
+	{
+		return this.IdVenta;
+	}
+
+ public String getFecha()
+ {
+     return this.Fecha;
+ }
+
+ public int getMontoTotal ()
+ {
+     return this.MontoTotal ;
+ }
+
+ public int getIdCliente ()
+ {
+     return this.IdCliente ;
+ }
+
+ public int getIdEmpleado ()
+ {
+     return this.IdEmpleado ;
+ }
