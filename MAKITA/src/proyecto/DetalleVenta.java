@@ -63,3 +63,19 @@ public class DetalleVenta {
 		operacionesSQL.cerrar();
 
 	}
+
+	public void mostrar()
+	{
+		if (this.IdDetalleVenta != 0)
+		{
+			System.out.println ("DetalleVentas:");
+			System.out.println ("\tIdDetalleVenta: " + this.IdDetalleVenta);
+			System.out.println ("\tIdVenta: " + this.IdVenta);
+			System.out.println ("\tIdMueble: " + this.IdMueble);
+			System.out.println ("\tCantidad: " + this.Cantidad);
+         System.out.println ("\tPrecioVenta : " + this.PrecioVenta );
+		}
+	}
+
+	public void leerDatos()
+	{
